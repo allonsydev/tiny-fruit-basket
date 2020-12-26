@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --white: #fafafa;
+  --black: #3c3c3c;
+
+  --robo: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--white);
+
+  font-family: var(--robo);
+  color: var(--black);
+
+  height: 100vh;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+
+  padding: 0.175rem 0.75rem;
+
+  font-size: 0.75rem;
+
+  /* border: 1px solid red; */
+}
+
+.container {
+  width: 80%;
+  max-width: 750px;
+
+  margin: 0 auto;
+}
+
+.basket-header,
+.basket-sec {
+  width: 750px;
+
+  padding: 1rem;
+  margin-top: 1rem;
+
+  text-align: center;
+
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 760px) {
+  .basket-header,
+  .basket-sec {
+    width: 550px;
+  }
+}
